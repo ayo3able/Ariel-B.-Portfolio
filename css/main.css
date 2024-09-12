@@ -1,0 +1,119 @@
+/* =========================
+General Styles
+============================ */
+*{
+    box-sizing: border-box;
+}
+body{
+    color: rgb(59, 59, 59);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+/* =========================
+Header
+============================ */
+header{
+    padding: 0 1%;
+}
+nav, ul{
+    display: flex;
+}
+nav{
+    justify-content: space-between;
+   
+}
+ul{
+    flex-basis: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li{
+    width: 100%;
+}
+
+/* =========================
+Main
+============================ */
+
+main{
+    margin: 2.5% 1%;
+    border-radius: 25px;
+    background-image: url("mainbg.png");
+    background-size: cover;
+    min-height:90vh; 
+    height:90vh; 
+    max-height:90vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+main *{
+    padding: 1%;
+}
+.proContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+.img{
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    
+}
+.img img{
+    border-radius: 50%;
+    height: 40vh;
+    margin: 5%;
+}
+
+.nameTextSocials{
+    flex-basis: 45%;
+    align-self: center;
+}
+.nameTextSocials h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.hire{
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 7px;
+    width: 30%;
+    text-align: center;
+    padding: 3%;
+}
+
+
+/* =========================
+Projects
+============================ */
+
+
+/* =========================
+Footer
+============================ */
+footer{
+    border: 2px dashed rgb(59, 59, 59);
+    border-radius: 15px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.canvaImg img{
+    width: 100%;
+    object-fit: contain;
+    margin: 0;
+    border-radius: 25px;
+}
