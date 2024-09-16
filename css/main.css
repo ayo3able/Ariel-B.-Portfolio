@@ -18,25 +18,38 @@ ul{
 
 
 /* =========================
-Header
+Top Navigation
 ============================ */
-header{
-    padding: 0 1%;
-}
+
 nav, ul{
     display: flex;
 }
 nav{
     justify-content: space-between;
-   
+    margin: 0 0 0 1.5%;
+    justify-self: center;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    height: 10vh;
+ 
 }
 ul{
-    flex-basis: 60%;
+    flex-basis: 57%;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid #A1938D;
 }
 ul li{
     width: 100%;
+    padding: 2%;
+}
+.fullStack{
+    font-size: 1em;
+    padding-top: 1%;
 }
 
 /* =========================
@@ -44,52 +57,95 @@ Main
 ============================ */
 
 main{
-    margin: 2.5% 1%;
-    border-radius: 25px;
+    border-radius: 50px;
+    box-shadow:  35px 35px 70px #d9d5d5,
+             -35px -35px 70px #ffffff;
     background-image: url("mainbg.png");
     background-size: cover;
+    background-repeat: no-repeat;
     min-height:90vh; 
     height:90vh; 
     max-height:90vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
-}
-main *{
     padding: 1%;
 }
+
+
 .proContainer{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     width: 100vw;
 }
 .img{
     flex-basis: 45%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     
 }
 .img img{
     border-radius: 50%;
-    height: 40vh;
+    box-shadow:  20px 20px 31px #d9d5d5,
+             -20px -20px 31px #ffffff;
+    height: 50vh;
     margin: 5%;
 }
 
 .nameTextSocials{
     flex-basis: 45%;
-    align-self: center;
 }
-.nameTextSocials h1{
-    font-size: 3rem;
-    margin: 0;
+.name{
+    height: 12vh;
+    margin: 6% 0 0 0;
 }
+
+.nameTextSocials p{
+    font-size: 1.5rem;
+}
+
 .hire{
-    border: 1px solid rgb(59, 59, 59);
-    border-radius: 7px;
-    width: 30%;
+    border-radius: 25px;
+    width: 20%;
     text-align: center;
-    padding: 3%;
+    padding: 1.75%;
+    background-color: #8995B1;
+    transform: rotate(344deg) translate(-17px, 0px) scale(1.1, 1);
+    box-shadow:  10px 10px 31px #d9d5d5,
+             -20px -20px 31px #ffffff;
+    margin: 5% 0 0 0;
+}
+.arrow{
+    width: 25%;
+    margin-left: 20%;
+}
+.btn{
+    color: #FDF3F3;
+    font-size: 1.5rem;
+    
+}
+.arrow{
+    height: 5v;
+}
+main .socials{
+    width: 30%;
+    height: 10vh;
+    background-color: #F9E9E9;
+    padding: 2%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow:  7px 7px 13px #e8d9d9,
+             -7px -7px 13px #fff9f9;
+}
+
+.socials p{
+    color: #A1938D;
+    font-size: 1.5em;
+}
+.topSocials{
+    width: 7%;
 }
 
 
@@ -102,18 +158,38 @@ Projects
 Footer
 ============================ */
 footer{
-    border: 2px dashed rgb(59, 59, 59);
-    border-radius: 15px;
     margin: 1%;
     display: flex;
     flex-direction: column;
+    background: #EDC1C2;
+    border-radius: 50px;
+    padding: 1%;
+    text-align: center;
     
 }
-
-
-.canvaImg img{
-    width: 100%;
-    object-fit: contain;
-    margin: 0;
-    border-radius: 25px;
+.bottomSocials{
+    width: 2%;
+    margin: 0 3%;
 }
+.bottom{
+    border: 0;
+
+}
+
+/* =========================
+hover styles
+============================ */
+
+#topLinks li:hover{
+border-radius: 25px 25px 0 0;
+background: #aea09b;
+font-weight: 600;
+}
+
+
+
+
+/* =========================
+media queries
+============================ */
+
